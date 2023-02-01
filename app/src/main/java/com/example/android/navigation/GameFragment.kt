@@ -104,8 +104,7 @@ class GameFragment : Fragment() {
                         view.findNavController().navigate(R.id.action_gameWonFragment2_to_gameFragment)
                     }
                 } else {
-                    val args = GameWonFragmentArgs.fromBundle(arguments!!)
-                    Toast.makeText(context, "NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}", Toast.LENGTH_LONG).show()
+                    view.findNavController().navigate(R.id.action_gameOverFragment2_to_gameFragment)
                 }
             }
         }
